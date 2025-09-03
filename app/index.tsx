@@ -1,6 +1,9 @@
 import { Text, View } from "react-native";
+import useHealthData from "../hooks/useHealthData";
 
 export default function Index() {
+  const data = useHealthData();
+  console.log('healthData: ', data);
   return (
     <View
       style={{
