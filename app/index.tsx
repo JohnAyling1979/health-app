@@ -1,18 +1,17 @@
-import { Text, View } from "react-native";
-import useHealthData from "../hooks/useHealthData";
+import { router } from "expo-router";
+import { Button, Text, View } from "react-native";
 
 export default function Index() {
-  const data = useHealthData();
-  console.log('healthData: ', data);
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
+        justifyContent: "space-around",
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Health App</Text>
+      <Button title="Dashboard" onPress={() => router.push('/dashboard')} />
     </View>
   );
 }
