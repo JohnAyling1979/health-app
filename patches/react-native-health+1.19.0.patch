@@ -1,5 +1,18 @@
+diff --git a/node_modules/react-native-health/index.d.ts b/node_modules/react-native-health/index.d.ts
+index 0cf0e28..c6db034 100644
+--- a/node_modules/react-native-health/index.d.ts
++++ b/node_modules/react-native-health/index.d.ts
+@@ -20,7 +20,7 @@ declare module 'react-native-health' {
+   export interface AppleHealthKit {
+     initHealthKit(
+       permissions: HealthKitPermissions,
+-      callback: (error: string, result: HealthValue) => void,
++      callback?: (error: string, result: HealthValue) => void,
+     ): void
+ 
+     isAvailable(callback: (error: Object, results: boolean) => void): void
 diff --git a/node_modules/react-native-health/index.js b/node_modules/react-native-health/index.js
-index 06e5105..4ff17e3 100644
+index 06e5105..c5d4e3c 100644
 --- a/node_modules/react-native-health/index.js
 +++ b/node_modules/react-native-health/index.js
 @@ -1,14 +1,104 @@
@@ -10,7 +23,7 @@ index 06e5105..4ff17e3 100644
 +const { AppleHealthKit } = require('react-native').NativeModules;
 +
 +export const HealthKit = {
-+  initHealthKit: AppleHealthKit.initHealthKit,
++  initHealthKit: (permissions, callback) => AppleHealthKit.initHealthKit(permissions, callback || (() => {})),
 +  isAvailable: AppleHealthKit.isAvailable,
 +  getBiologicalSex: AppleHealthKit.getBiologicalSex,
 +  getBloodType: AppleHealthKit.getBloodType,
