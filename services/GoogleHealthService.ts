@@ -1,9 +1,11 @@
 import {
     getGrantedPermissions,
+    HeightRecord,
     initialize,
     readRecords,
     ReadRecordsOptions,
-    requestPermission
+    requestPermission,
+    WeightRecord,
 } from "react-native-health-connect";
 
 function GoogleHealthService() {
@@ -36,10 +38,25 @@ function GoogleHealthService() {
             }
 
             const healthData = await readRecords(recordType, options);
-            return healthData.records || [];
+
+            if (healthData.records.length === 0) {
+                return 0;
+            }
+
+            if (healthData.records[0] === null) {
+                return 0;
+            }
+
+            if (recordType === 'Weight') {
+                return (healthData.records[0] as WeightRecord).weight.value;
+            } else if (recordType === 'Height') {
+                return (healthData.records[0] as HeightRecord).height.value;
+            } else {
+                return 0;
+            }
         } catch (error) {
             console.error('Error reading health data: ', error);
-            return [];
+            return 0;
         }
     }
 

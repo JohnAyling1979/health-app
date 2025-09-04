@@ -3,7 +3,7 @@ import GoogleHealthService from "@/services/GoogleHealthService";
 import { useEffect, useState } from "react";
 import { Platform, Text, View } from "react-native";
 
-let readHealthData: (recordType: any, options: any) => Promise<any[]>;
+let readHealthData: (recordType: any, options: any) => Promise<number>;
 
 if (Platform.OS === 'ios') {
   readHealthData = AppleHealthService().readHealthData;
@@ -22,7 +22,7 @@ export default function Dashboard() {
         startTime: new Date('2025-01-01').toISOString(),
         endTime: new Date().toISOString(),
       },
-    }).then((data: any) => {
+    }).then((data: number) => {
       setHeightData(data);
     }).catch((error: any) => {
       console.log('error', error);
@@ -34,7 +34,7 @@ export default function Dashboard() {
         startTime: new Date('2025-01-01').toISOString(),
         endTime: new Date().toISOString(),
       },
-    }).then((data: any) => {
+    }).then((data: number) => {
       setWeightData(data);
     }).catch((error: any) => {
       console.log('error', error);
