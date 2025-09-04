@@ -17,7 +17,6 @@ export default function RootLayout() {
 
   useEffect(() => {
     initializeHealthData().then((isInitialized) => {
-      console.log('isInitialized', isInitialized);
       setIsInitialized(isInitialized);
     }).catch((error) => {
       router.push('/error');
