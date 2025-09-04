@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033BCEC10CEE7E4A33C60074 /* libPods-healthapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC841FDF4D6974CD6C209E90 /* libPods-healthapp.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		66B2CA62BA1B9CED9F7E3D23 /* libPods-healthapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9A4D44767066D8F0A9800D /* libPods-healthapp.a */; };
+		48D14F131AE4495B4A5E4C7A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CB9FCD599C52963ABBF2F387 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		C8EB102CA01B2E716D7A033C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FAEFF688177CBECEDBCC39 /* ExpoModulesProvider.swift */; };
-		CF156ACC4BEC89AEA0A40CA6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 948BF07765400C3E3EB16419 /* PrivacyInfo.xcprivacy */; };
+		E3210440D0CBFCA66BB576C0 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83277D4883EE5996F0BB9C87 /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,16 +20,16 @@
 		13B07F961A680F5B00A75B9A /* healthapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = healthapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = healthapp/Info.plist; sourceTree = "<group>"; };
-		2C3E9EADCB96205F2B25DF96 /* Pods-healthapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthapp.release.xcconfig"; path = "Target Support Files/Pods-healthapp/Pods-healthapp.release.xcconfig"; sourceTree = "<group>"; };
-		37FAEFF688177CBECEDBCC39 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-healthapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		8F9A4D44767066D8F0A9800D /* libPods-healthapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-healthapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		948BF07765400C3E3EB16419 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = healthapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1DF21404320EE65FC95FE258 /* Pods-healthapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthapp.debug.xcconfig"; path = "Target Support Files/Pods-healthapp/Pods-healthapp.debug.xcconfig"; sourceTree = "<group>"; };
+		6F5E17B4703A0F3E59F45E58 /* Pods-healthapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthapp.release.xcconfig"; path = "Target Support Files/Pods-healthapp/Pods-healthapp.release.xcconfig"; sourceTree = "<group>"; };
+		83277D4883EE5996F0BB9C87 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-healthapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = healthapp/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		CB9FCD599C52963ABBF2F387 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = healthapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CC841FDF4D6974CD6C209E90 /* libPods-healthapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-healthapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = healthapp/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* healthapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "healthapp-Bridging-Header.h"; path = "healthapp/healthapp-Bridging-Header.h"; sourceTree = "<group>"; };
-		FBB455A14D8E6C2BA6BED073 /* Pods-healthapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-healthapp.debug.xcconfig"; path = "Target Support Files/Pods-healthapp/Pods-healthapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66B2CA62BA1B9CED9F7E3D23 /* libPods-healthapp.a in Frameworks */,
+				033BCEC10CEE7E4A33C60074 /* libPods-healthapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,34 +53,18 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				948BF07765400C3E3EB16419 /* PrivacyInfo.xcprivacy */,
+				CB9FCD599C52963ABBF2F387 /* PrivacyInfo.xcprivacy */,
 			);
 			name = healthapp;
-			sourceTree = "<group>";
-		};
-		1403BA54D4AA801441A53BC0 /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				7887AD0E210985E90D432AE5 /* healthapp */,
-			);
-			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				8F9A4D44767066D8F0A9800D /* libPods-healthapp.a */,
+				CC841FDF4D6974CD6C209E90 /* libPods-healthapp.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7887AD0E210985E90D432AE5 /* healthapp */ = {
-			isa = PBXGroup;
-			children = (
-				37FAEFF688177CBECEDBCC39 /* ExpoModulesProvider.swift */,
-			);
-			name = healthapp;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -97,8 +81,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				CB095CC1B60E85B10073EF88 /* Pods */,
-				1403BA54D4AA801441A53BC0 /* ExpoModulesProviders */,
+				924BBBED11EC868DF287F7EE /* Pods */,
+				AD8811EDE5902763C060165A /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -113,6 +97,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		924BBBED11EC868DF287F7EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DF21404320EE65FC95FE258 /* Pods-healthapp.debug.xcconfig */,
+				6F5E17B4703A0F3E59F45E58 /* Pods-healthapp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD8811EDE5902763C060165A /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				B0DF46BBDD88A65245FAABC6 /* healthapp */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		B0DF46BBDD88A65245FAABC6 /* healthapp */ = {
+			isa = PBXGroup;
+			children = (
+				83277D4883EE5996F0BB9C87 /* ExpoModulesProvider.swift */,
+			);
+			name = healthapp;
+			sourceTree = "<group>";
+		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,16 +129,6 @@
 			);
 			name = Supporting;
 			path = healthapp/Supporting;
-			sourceTree = "<group>";
-		};
-		CB095CC1B60E85B10073EF88 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FBB455A14D8E6C2BA6BED073 /* Pods-healthapp.debug.xcconfig */,
-				2C3E9EADCB96205F2B25DF96 /* Pods-healthapp.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,13 +139,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "healthapp" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				37D406C370BE1E26B52BC9D9 /* [Expo] Configure project */,
+				6BF9E1A6A7AEF386C7991187 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				6660AC8044D06CF676CE54D5 /* [CP] Embed Pods Frameworks */,
+				EB6FD96243B8F3B680EA2A2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +195,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				CF156ACC4BEC89AEA0A40CA6 /* PrivacyInfo.xcprivacy in Resources */,
+				48D14F131AE4495B4A5E4C7A /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +239,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		37D406C370BE1E26B52BC9D9 /* [Expo] Configure project */ = {
+		6BF9E1A6A7AEF386C7991187 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -258,24 +257,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-healthapp/expo-configure-project.sh\"\n";
-		};
-		6660AC8044D06CF676CE54D5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-healthapp/Pods-healthapp-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-healthapp/Pods-healthapp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -317,6 +298,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-healthapp/Pods-healthapp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EB6FD96243B8F3B680EA2A2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-healthapp/Pods-healthapp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-healthapp/Pods-healthapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,7 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				C8EB102CA01B2E716D7A033C /* ExpoModulesProvider.swift in Sources */,
+				E3210440D0CBFCA66BB576C0 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,12 +333,13 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBB455A14D8E6C2BA6BED073 /* Pods-healthapp.debug.xcconfig */;
+			baseConfigurationReference = 1DF21404320EE65FC95FE258 /* Pods-healthapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = healthapp/healthapp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAT5X38669;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -370,12 +370,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C3E9EADCB96205F2B25DF96 /* Pods-healthapp.release.xcconfig */;
+			baseConfigurationReference = 6F5E17B4703A0F3E59F45E58 /* Pods-healthapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = healthapp/healthapp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SAT5X38669;
 				INFOPLIST_FILE = healthapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,10 +454,7 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -511,10 +509,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

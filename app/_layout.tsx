@@ -1,9 +1,16 @@
+import AppleHealthService from "@/services/AppleHealthService";
 import GoogleHealthService from "@/services/GoogleHealthService";
 import { router, Stack } from "expo-router";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, View } from "react-native";
+import { ActivityIndicator, Platform, View } from "react-native";
 
-const { initializeHealthData } = GoogleHealthService();
+let initializeHealthData: () => Promise<boolean>;
+
+if (Platform.OS === 'ios') {
+  initializeHealthData = AppleHealthService().initializeHealthData;
+} else {
+  initializeHealthData = GoogleHealthService().initializeHealthData;
+}
 
 export default function RootLayout() {
   const [isInitialized, setIsInitialized] = useState(false);
