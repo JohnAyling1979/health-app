@@ -1,23 +1,20 @@
-import AppleHealthService from "@/services/AppleHealthService";
-import GoogleHealthService from "@/services/GoogleHealthService";
 import { router, Stack } from "expo-router";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, Platform, View } from "react-native";
-
-let initializeHealthData: () => Promise<boolean>;
-
-if (Platform.OS === 'ios') {
-  initializeHealthData = AppleHealthService().initializeHealthData;
-} else {
-  initializeHealthData = GoogleHealthService().initializeHealthData;
-}
+import { ActivityIndicator, View } from "react-native";
+import { HealthLinkPermissions, initializeHealth } from "react-native-health-link";
 
 export default function RootLayout() {
   const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
-    initializeHealthData().then((isInitialized) => {
-      setIsInitialized(isInitialized);
+    initializeHealth({
+      read: [
+        HealthLinkPermissions.Height,
+        HealthLinkPermissions.Weight,
+      ],
+      write: [],
+    }).then(() => {
+      setIsInitialized(true);
     }).catch((error) => {
       router.push('/error');
     });

@@ -1,42 +1,24 @@
-import AppleHealthService from "@/services/AppleHealthService";
-import GoogleHealthService from "@/services/GoogleHealthService";
 import { useEffect, useState } from "react";
-import { Platform, Text, View } from "react-native";
-
-let readHealthData: (recordType: any, options: any) => Promise<number>;
-
-if (Platform.OS === 'ios') {
-  readHealthData = AppleHealthService().readHealthData;
-} else {
-  readHealthData = GoogleHealthService().readHealthData;
-}
+import { Text, View } from "react-native";
+import { HealthLinkDataType, read } from "react-native-health-link";
 
 export default function Dashboard() {
   const [heightData, setHeightData] = useState<number>(0);
   const [weightData, setWeightData] = useState<number>(0);
 
   useEffect(() => {
-    readHealthData('Height', {
-      timeRangeFilter: {
-        operator: 'between',
-        startTime: new Date('2025-01-01').toISOString(),
-        endTime: new Date().toISOString(),
-      },
-    }).then((data: number) => {
-      setHeightData(data);
-    }).catch((error: any) => {
+    read(HealthLinkDataType.Height, {
+      startDate: new Date(new Date().setHours(0, 0, 0, 0)).toISOString(),
+    }).then((data) => {
+      setHeightData(parseInt(`${data[0]?.value ?? '0'}`));
+    }).catch((error) => {
       console.log('error', error);
     });
-
-    readHealthData('Weight', {
-      timeRangeFilter: {
-        operator: 'between',
-        startTime: new Date('2025-01-01').toISOString(),
-        endTime: new Date().toISOString(),
-      },
-    }).then((data: number) => {
-      setWeightData(data);
-    }).catch((error: any) => {
+    read(HealthLinkDataType.Weight, {
+      startDate: new Date(new Date().setHours(0, 0, 0, 0)).toISOString(),
+    }).then((data) => {
+      setWeightData(parseInt(`${data[0]?.value ?? '0'}`));
+    }).catch((error) => {
       console.log('error', error);
     });
   }, []);
